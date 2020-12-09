@@ -52,3 +52,10 @@ cat .env.example > .env
 # Run (development mode) the API
 npm run dev
 ```
+
+### Updating from the starter
+
+```shell
+git fetch upstream
+git rebase upstream/master
+```
