@@ -25,26 +25,30 @@ Development utilities:
 * [supertest](https://www.npmjs.com/package/supertest)
   * HTTP assertions made easy via superagent.
 
-## Setup
+## Getting started
 
-```
+```shell
+# Clone the starter
+git clone --depth=1 https://github.com/eksoverzero/express-api-starter.git <project_name>
+
+# Change directory
+cd <project_name>
+
+# Set the starter as the upstream (for merging in starter updates later on)
+git remote remove origin
+
+# Add the starter as an upstream
+git remote add upstream https://github.com/eksoverzero/express-api-starter.git
+
+# Add a new master/main
+git remote add origin <project_repo>
+
+# Install dependencies
 npm install
-```
 
-## Lint
+# Copy the .env.example contents into the .env
+cat .env.example > .env
 
-```
-npm run lint
-```
-
-## Test
-
-```
-npm run test
-```
-
-## Development
-
-```
+# Run (development mode) the API
 npm run dev
 ```
